@@ -1,0 +1,38 @@
+{
+  "name": "Madabox",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "mobx": "^4.3.1",
+    "mobx-react": "^5.2.3",
+    "native-base": "^2.7.2",
+    "react": "16.3.1",
+    "react-native": "0.55.4",
+    "react-native-alphabetlistview": "^0.3.0",
+    "react-native-drawer": "^2.5.0",
+    "react-native-images-collage": "^2.1.2",
+    "react-native-modal-dropdown": "^0.6.2",
+    "react-native-router-flux": "^4.0.0-beta.28",
+    "react-native-snap-carousel": "^3.7.0",
+    "react-native-vector-icons": "^4.6.0",
+    "react-redux": "^5.0.7",
+    "redux": "^3.7.2"
+  },
+  "devDependencies": {
+    "babel-jest": "23.4.0",
+    "babel-preset-react-native": "4.0.0",
+    "eslint": "^4.19.1",
+    "eslint-plugin-react": "^7.7.0",
+    "eslint-plugin-react-native": "^3.2.1",
+    "jest": "23.4.1",
+    "react-test-renderer": "16.3.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
