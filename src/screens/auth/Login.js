@@ -6,6 +6,10 @@ import { Actions } from "react-native-router-flux";
 import { Btn } from "../../components/common";
 
 class Login extends Component {
+  state = { 
+    email: '' ,
+    password: ''
+  };
   render() {
     const { centerItems, logoStyle, formStyle, itemStyle, forgotPasswordStyle, passwordStyle, whiteColor, borderStyle } = styles;
     return (
@@ -20,11 +24,16 @@ class Login extends Component {
                   <Form style={[formStyle, centerItems]}>
                     <Item floatingLabel style={itemStyle}>
                       <Label style={{ color: "#fff" }}>Email</Label>
-                      <Input keyboardType="email-address" style={whiteColor} />
+                      <Input keyboardType="email-address" style={whiteColor} 
+                      autoCorrect={false}
+                      value={ this.state.email } 
+                      onChangeText={email => this.setState({ email })} />
                     </Item>
                     <Item floatingLabel style={itemStyle}>
                       <Label style={{ color: "#fff" }}>Password</Label>
-                      <Input secureTextEntry style={passwordStyle} />
+                      <Input secureTextEntry style={passwordStyle} 
+                      value={ this.state.password } 
+                      onChangeText={password => this.setState({ password })} />
                     </Item>
 
                     <View style={{ width: "99%", height: 40, marginLeft: 30, marginTop: 20, alignSelf: "center" }}>

@@ -23,22 +23,9 @@ export default class Show extends Component {
               <Icon name="search" onPress={Actions.search} style={{ color: "#d32f2f" }} />
             </View>
             <View
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-                flexDirection: "column",
-                alignItems: "center",
-                padding: 5
-              }}
-            >
+              style={{ display: "flex", justifyContent: "space-between", flexDirection: "column", alignItems: "center", padding: 5}}>
               <View
-                style={{
-                  flexDirection: "row",
-                  flex: 1,
-                  justifyContent: "space-between",
-                  alignItems: "center"
-                }}
-              >
+                style={{ flexDirection: "row", flex: 1, justifyContent: "space-between", alignItems: "center" }}>
                 <View style={{ alignItems: "center" }}>
                   <Thumbnail
                     large
